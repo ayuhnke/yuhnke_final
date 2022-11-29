@@ -1,0 +1,353 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Reset code written by Eric Meyer
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS Reset styles end */
+
+*{
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+body{
+    background-color: #040907;
+    margin: 0;
+    color: #fff;
+}
+
+#wrapper{
+    width: 1280px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    height: 175px;
+    background-color: #983e31;
+}
+
+h1{
+    margin: 0;
+    padding-top: 22px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    font-family: 'Cambria', Georgia, serif;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    color: #e0e8dd;
+    text-shadow: 0 0 2px #9b4141;
+}
+
+h1 a{
+    text-decoration: none;
+    text-transform: none;
+    color: #e0e8dd;
+}
+
+nav{
+	margin: 0 auto;
+	padding: 0.5rem 0;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: lighter;
+    display: block;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+	padding-left: 0;
+}
+
+nav a{
+    text-decoration: none;
+	color: #e0e8dd;
+	font-size: 20px;
+	font-weight: bold;
+    padding: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #020403;
+}
+
+nav a:hover{
+    padding: 16px;
+    background-color: #983e31;
+    border: 5px;
+    border-color: #e0e8dd;
+    text-decoration: underline;
+    transition: all 0.6s;
+    outline: 3.5px solid #fff;
+    outline-offset: -1px;
+}
+
+nav a:active{
+    background-color: #6d2c22;
+    border: 3px solid #fff;
+}
+
+.home:visited, .contact:visited{
+    background-color: #6d2c22;
+    border: 3px solid #fff;
+}
+
+main{
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+#columns{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#bar{
+    margin-left: 80px;
+}
+
+#header-img{
+    float: right;
+    width: 765px;
+}
+
+#contact-img{
+    opacity: 80%;
+}
+
+main img{
+    width: 1280px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Verdana, sans-serif;
+    padding-bottom: 5px;
+}
+
+h3{
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Verdana, sans-serif;
+    padding-bottom: 5px;
+}
+
+main p{
+    font-size: 18px;
+    text-align: center;
+}
+
+#fixed{
+	position: fixed;
+	left: 88vw;
+	top: 84vh;
+    width: 60px;
+}
+
+#static{
+padding-right: 7px;
+    position: static;
+    vertical-align: baseline;
+    filter:drop-shadow(11px 19px 1px #a94b4b);
+}
+
+#static-flipped{
+    position: static;
+    vertical-align: baseline;
+    transform: scaleX(-1);
+    filter:drop-shadow(11px 19px 1px #a94b4b);
+}
+
+form{
+	width: 749px;
+	margin: 45px auto;
+    background-image: url(contact-page/contact-img-optional2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 870px;
+    box-sizing: border-box;
+	padding: 150px;
+	color: #e0e8dd;
+	border-radius: 5px;
+    align-items: center;
+}
+
+input, label, select, textarea{
+	display: block;
+	width: 100%;
+}
+
+label{
+	font-weight: bold;
+}
+
+input, select, textarea{
+	padding: 10px;
+	font-size: 1rem;
+	margin-bottom: 24px;
+	border-radius: 4px;
+	border: 1px inset #040907;
+}
+
+fieldset{
+	margin-bottom: 24px;
+	border-radius: 4px;
+	border-color: #e0e8dd;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 8px 0;
+}
+
+legend{
+	font-weight: bold;
+}
+
+fieldset label{
+	margin-left: 0;
+}
+
+input[type=submit]{
+    align-content: center;
+	background-color: #6d2c22;
+	border: solid;
+	color: #FFF;
+	font-weight: bold;
+	box-shadow: 2px 3px 10px #040907;
+	border-radius: 4px;
+	border: 1px inset #040907;
+}
+
+input:invalid, select:invalid, textarea:invalid{
+	border: 5px solid #a94b4b;
+    box-shadow: 0px 2px 10px #a94b4b;
+}
+
+input:focus, select:focus, textarea:focus{
+	outline: 3px solid #6d2c22;
+}
+
+input[type=submit]:hover{
+	box-shadow: 2px 3px 10px #040907;
+    border: 7px;
+    border-color: #e0e8dd;
+    transition: all 0.6s;
+    outline: 3.5px solid #fff;
+    outline-offset: -1px;
+}
+
+input[type=radio] + label{
+   	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+input[type=radio]{
+   	appearance: none;
+   	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 0;
+	border-radius: 0;
+}
+
+input[type=radio] + label::before{
+   	content: "\00a0";
+	font-size: 2.25em;
+	line-height: 0.65;
+   	border-radius: 50%;
+   	display: inline-block;  
+   	height: 20px;
+   	width: 22px;
+   	text-align: center;
+   	margin-right: 16px;
+   	border: 2px solid white;
+   	background-color: #fff;
+	padding-bottom: 2px;
+}
+
+input[type=radio]:checked + label::before{
+   	content: "\2022";
+   	color: #fff;
+   	background: #040907;
+}
+
+input[type=radio]:focus{
+	outline: none;
+}
+
+input[type=radio]:focus + label::before{
+   	box-shadow: 0 0 0 2px #040907;
+}
+
+footer{
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.5;
+    height: 65px;
+    background-color: #983e31;
+    padding-top: 37px;
+    padding-bottom: 45px;
+    margin-top: 30px;
+}
+
+footer p{
+    text-align: center;
+}
